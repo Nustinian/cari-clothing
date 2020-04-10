@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
+import ShopPage from "./pages/shop/shop.component";
 import { Switch, Route } from "react-router-dom";
 
 const ItemPage = (props) => {
@@ -16,6 +17,7 @@ function App() {
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/shop" component={ShopPage} />
         <Route path="/shop/:item" component={ItemPage} />
       </Switch>
     </div>
