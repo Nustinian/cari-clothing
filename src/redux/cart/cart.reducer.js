@@ -9,7 +9,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
     case CartActionTypes.TOGGLE_HIDDEN:
       return {
         ...state,
-        hidden: action.payload,
+        hidden: !state.hidden,
       };
     default:
       return state;
