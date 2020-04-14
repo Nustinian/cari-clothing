@@ -23,16 +23,13 @@ const CheckoutItem = ({
       </div>
       <span className="name">{name}</span>
       <span className="quantity">
-        <span
-          className="decrease-button"
-          onClick={() => removeFromCart(cartItem)}
-        >
-          {"<"}
-        </span>
-        {quantity}
-        <span className="increase-button" onClick={() => addToCart(cartItem)}>
-          {">"}
-        </span>
+        <div className="arrow" onClick={() => removeFromCart(cartItem)}>
+          &#10094;
+        </div>
+        <span className="value">{quantity}</span>
+        <div className="arrow" onClick={() => addToCart(cartItem)}>
+          &#10095;
+        </div>
       </span>
       <span className="price">{price}</span>
       <div onClick={() => clearFromCart(cartItem)} className="remove-button">
