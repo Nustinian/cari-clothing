@@ -20,6 +20,23 @@
   .quantity,
   .price {
     width: 23%;
+    position: relative;
+
+    .increase-button {
+      font-size: 37px;
+      top: 5px;
+      left: 2px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .decrease-button {
+      font-size: 37px;
+      top: 5px;
+      right: 2px;
+      position: relative;
+      cursor: pointer;
+    }
   }
 
   .quantity {
